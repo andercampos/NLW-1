@@ -15,7 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&amp;family=Poppins:wght@400;600&amp;display=swap"
     rel="stylesheet">
 
-  <script src="/scripts/addField.js" defer></script>
+  <script src="/scripts/script.js" defer></script>
 </head>
 
 <body id="page-give-classes">
@@ -96,14 +96,14 @@
 
         <fieldset id="schedule-items">
           <legend>Horários disponíveis
-            <button type="button" id="add-time">+ Novo Horário</button>
+            <button type="button" id="add-time" onclick="AddField.cloneField()">+ Novo Horário</button>
           </legend>
 
           <div class="schedule-item">
 
             <div class="select-block">
               <label for="weekday">Dia da semana</label>
-              <select name="weekday[]" required>
+              <select name="weekday[]" id="select_card" required>
                 <option value="">Selecione uma opção</option>
                 {% for weekday in weekdays %}
                   <option value="{{loop.index0}}">

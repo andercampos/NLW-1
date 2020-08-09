@@ -3,8 +3,21 @@
   height: 100vh;
 }
 
-#page-give-classes .page-header .header-content {
+.page-header .header-content {
   margin-bottom: 6.4rem;
+}
+
+.header-content .header-extra {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-content .header-extra p {
+  margin-top: 0;
+  margin-left: 1.6rem;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
 }
 
 #page-give-classes main {
@@ -123,6 +136,13 @@
 
   #page-give-classes .page-header .header-content {
     margin-bottom: 0;
+  }
+
+  .header-content .header-extra {
+    position: absolute;
+    
+    right: 0;
+    bottom: 90px;
   }
 
   #page-give-classes main fieldset {
